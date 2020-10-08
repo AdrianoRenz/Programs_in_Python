@@ -8,6 +8,9 @@ from tkinter import messagebox
 # on your computer to use this file.
 #▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#Here it says in what format will convert the file.
+extensao = '.mp4'
+
 # Opens a file selection window, then opens another 
 # window to the location where you want to save the file.
 filename = filedialog.askopenfilename()
@@ -16,8 +19,14 @@ path     = filedialog.askdirectory()
 filename = filename.replace( ' ', ' ' )
 path     = path.replace( ' ', ' ' )
 
+#Debug GET files
+print(filename)
+print(path)
 
-# Below, convert the files to your preference, 
-# where "Name.mp4" is written to the name you want.
-subprocess.run(['ffmpeg', '-i', filename, path+"./Name.mp4"])
+#os.system('gif2webp ' + filename + ' -o ' + (path + './Nazare.gif)
+#os.system('ffmpeg -i ' + str(afilename) + ' ' + str(apath)+ ' ' + './Aniversario da Instituições Novembro'+extensao)
+subprocess.run(['ffmpeg', '-i', filename, path+"./Aniversario da Instituições Novembro"+extensao])
+
+#Done Message
 messagebox.showinfo(title="Done", message="Done")
+
