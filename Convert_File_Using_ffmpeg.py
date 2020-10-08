@@ -9,7 +9,7 @@ from tkinter import messagebox
 #▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #Here it says in what format will convert the file.
-extensao = '.mp4'
+extension = '.mp4'
 
 # Opens a file selection window, then opens another 
 # window to the location where you want to save the file.
@@ -23,9 +23,8 @@ path     = path.replace( ' ', ' ' )
 print(filename)
 print(path)
 
-#os.system('gif2webp ' + filename + ' -o ' + (path + './Nazare.gif)
-#os.system('ffmpeg -i ' + str(afilename) + ' ' + str(apath)+ ' ' + './Aniversario da Instituições Novembro'+extensao)
-subprocess.run(['ffmpeg', '-i', filename, path+"./Aniversario da Instituições Novembro"+extensao])
+#Run the program.
+subprocess.run(['ffmpeg', '-i', filename, path+"./Name"+extension])
 
 #Done Message
 messagebox.showinfo(title="Done", message="Done")
