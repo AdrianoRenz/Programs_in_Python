@@ -13,10 +13,10 @@ you need ffmpeg installed on your computer.
 
 #Português 
 
-Este código permite converter outros arquivos de vídeo para mp4, mas também é possível converter vídeos em arquivos de áudioáudio .
+Este código permite converter outros arquivos de vídeo para mp4, mas também é possível converter vídeos em arquivos de áudio.
 
 Precisa:
 
-Pacote do python chamdo tkinter, poder ser instalado por cmd usando o comando "pip install tk".
+Pacote do python chamado tkinter, poder ser instalado por cmd usando o comando "pip install tk".
 
 Você precisa do ffmpeg instalado no seu computador.
